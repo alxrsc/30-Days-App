@@ -8,7 +8,7 @@ The structure:
     -> will be based on a lazy column that contains cards with each Tip
         -> Tips will have a title, image and body
         -> Tips will be implemented as a data class 
-        -> the cards will be saved under ui.theme/TipCard.kt
+        -> the cards will be saved under ui.components/TipCard.kt
     -> when using landscape the layout within the cards will change for better display
 
 Features that *might* be added:

@@ -11,6 +11,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.a30daysapp.sampledata.tips
+import com.example.a30daysapp.ui.components.TipCard
 import com.example.a30daysapp.ui.theme._30DaysAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -32,10 +34,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
+    TipCard(tips[0])
 }
 
 @Preview(showBackground = true)
