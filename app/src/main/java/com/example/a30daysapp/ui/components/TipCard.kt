@@ -1,6 +1,7 @@
 package com.example.a30daysapp.ui.components
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -23,10 +24,17 @@ import androidx.compose.ui.unit.dp
 import com.example.a30daysapp.sampledata.Tip
 
 @Composable
-fun TipCard(tip: Tip, modifier: Modifier = Modifier ) {
+fun TipCard(
+    tip: Tip,
+    onCardClick: () -> Unit,
+    onImageClick: () -> Unit,
+    modifier: Modifier = Modifier
+) {
 
     Card(
-        modifier = modifier.padding(8.dp),
+        modifier = modifier
+            .padding(8.dp)
+            .clickable { onCardClick() },
         shape = RoundedCornerShape(8.dp)
     ) {
         Column(
@@ -41,7 +49,8 @@ fun TipCard(tip: Tip, modifier: Modifier = Modifier ) {
                 modifier = Modifier
                     .fillMaxWidth()
                     .size(200.dp)
-                    .clip(RoundedCornerShape(12.dp)),
+                    .clip(RoundedCornerShape(12.dp))
+                    .clickable { onImageClick() },
                 contentScale = ContentScale.Crop
             )
             Spacer(modifier = Modifier.height(8.dp))
