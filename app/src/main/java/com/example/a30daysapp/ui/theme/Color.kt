@@ -217,33 +217,9 @@ val surfaceContainerDarkHighContrast = Color(0xFF2F312A)
 val surfaceContainerHighDarkHighContrast = Color(0xFF3A3C35)
 val surfaceContainerHighestDarkHighContrast = Color(0xFF454840)
 
-val customColor1Light = Color(0xFF755085)
-val onCustomColor1Light = Color(0xFFFFFFFF)
-val customColor1ContainerLight = Color(0xFFF7D8FF)
-val onCustomColor1ContainerLight = Color(0xFF5C396C)
 
-val customColor1LightMediumContrast = Color(0xFF4A285A)
-val onCustomColor1LightMediumContrast = Color(0xFFFFFFFF)
-val customColor1ContainerLightMediumContrast = Color(0xFF855F95)
-val onCustomColor1ContainerLightMediumContrast = Color(0xFFFFFFFF)
 
-val customColor1LightHighContrast = Color(0xFF3F1D4F)
-val onCustomColor1LightHighContrast = Color(0xFFFFFFFF)
-val customColor1ContainerLightHighContrast = Color(0xFF5E3B6E)
-val onCustomColor1ContainerLightHighContrast = Color(0xFFFFFFFF)
 
-val customColor1Dark = Color(0xFFE3B7F4)
-val onCustomColor1Dark = Color(0xFF442254)
-val customColor1ContainerDark = Color(0xFF5C396C)
-val onCustomColor1ContainerDark = Color(0xFFF7D8FF)
 
-val customColor1DarkMediumContrast = Color(0xFFF4D0FF)
-val onCustomColor1DarkMediumContrast = Color(0xFF381648)
-val customColor1ContainerDarkMediumContrast = Color(0xFFAB82BB)
-val onCustomColor1ContainerDarkMediumContrast = Color(0xFF000000)
 
-val customColor1DarkHighContrast = Color(0xFFFDEAFF)
-val onCustomColor1DarkHighContrast = Color(0xFF000000)
-val customColor1ContainerDarkHighContrast = Color(0xFFDFB3EF)
-val onCustomColor1ContainerDarkHighContrast = Color(0xFF180026)
 

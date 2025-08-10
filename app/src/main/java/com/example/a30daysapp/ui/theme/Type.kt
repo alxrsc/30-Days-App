@@ -1,53 +1,44 @@
 package com.example.ui.theme
 
 import androidx.compose.material3.Typography
-import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.unit.sp
-
-import androidx.compose.ui.text.googlefonts.GoogleFont
-import androidx.compose.ui.text.googlefonts.Font
 import com.example.a30daysapp.R
 
-val provider = GoogleFont.Provider(
-    providerAuthority = "com.google.android.gms.fonts",
-    providerPackage = "com.google.android.gms",
-    certificates = R.array.com_google_android_gms_fonts_certs
+// Local font families
+val AbrilFatface = FontFamily(
+    Font(R.font.abril_fatface_regular, FontWeight.Normal)
 )
 
-val bodyFontFamily = FontFamily(
-    Font(
-        googleFont = GoogleFont("Alexandria"),
-        fontProvider = provider,
-    )
+val Bungee = FontFamily(
+    Font(R.font.bungee_regular, FontWeight.Normal)
 )
 
-val displayFontFamily = FontFamily(
-    Font(
-        googleFont = GoogleFont("Bungee"),
-        fontProvider = provider,
-    )
+val Montserrat = FontFamily(
+    Font(R.font.montserrat_variable, FontWeight.Normal),
+    Font(R.font.montserrat_italic_variable, FontWeight.Normal, FontStyle.Italic)
 )
 
 // Default Material 3 typography values
 val baseline = Typography()
 
+// Apply custom fonts to your theme
 val AppTypography = Typography(
-    displayLarge = baseline.displayLarge.copy(fontFamily = displayFontFamily),
-    displayMedium = baseline.displayMedium.copy(fontFamily = displayFontFamily),
-    displaySmall = baseline.displaySmall.copy(fontFamily = displayFontFamily),
-    headlineLarge = baseline.headlineLarge.copy(fontFamily = displayFontFamily),
-    headlineMedium = baseline.headlineMedium.copy(fontFamily = displayFontFamily),
-    headlineSmall = baseline.headlineSmall.copy(fontFamily = displayFontFamily),
-    titleLarge = baseline.titleLarge.copy(fontFamily = displayFontFamily),
-    titleMedium = baseline.titleMedium.copy(fontFamily = displayFontFamily),
-    titleSmall = baseline.titleSmall.copy(fontFamily = displayFontFamily),
-    bodyLarge = baseline.bodyLarge.copy(fontFamily = bodyFontFamily),
-    bodyMedium = baseline.bodyMedium.copy(fontFamily = bodyFontFamily),
-    bodySmall = baseline.bodySmall.copy(fontFamily = bodyFontFamily),
-    labelLarge = baseline.labelLarge.copy(fontFamily = bodyFontFamily),
-    labelMedium = baseline.labelMedium.copy(fontFamily = bodyFontFamily),
-    labelSmall = baseline.labelSmall.copy(fontFamily = bodyFontFamily),
+    displayLarge = baseline.displayLarge.copy(fontFamily = Bungee),
+    displayMedium = baseline.displayMedium.copy(fontFamily = Bungee),
+    displaySmall = baseline.displaySmall.copy(fontFamily = Bungee),
+    headlineLarge = baseline.headlineLarge.copy(fontFamily = AbrilFatface),
+    headlineMedium = baseline.headlineMedium.copy(fontFamily = AbrilFatface),
+    headlineSmall = baseline.headlineSmall.copy(fontFamily = AbrilFatface),
+    titleLarge = baseline.titleLarge.copy(fontFamily = Bungee),
+    titleMedium = baseline.titleMedium.copy(fontFamily = Bungee),
+    titleSmall = baseline.titleSmall.copy(fontFamily = Bungee),
+    bodyLarge = baseline.bodyLarge.copy(fontFamily = Montserrat),
+    bodyMedium = baseline.bodyMedium.copy(fontFamily = Montserrat),
+    bodySmall = baseline.bodySmall.copy(fontFamily = Montserrat),
+    labelLarge = baseline.labelLarge.copy(fontFamily = Montserrat),
+    labelMedium = baseline.labelMedium.copy(fontFamily = Montserrat),
+    labelSmall = baseline.labelSmall.copy(fontFamily = Montserrat),
 )
-
