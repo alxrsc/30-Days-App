@@ -13,5 +13,5 @@ data class Tip (
 )
 
 val tips = listOf(
-    Tip(R.drawable.ic_launcher_background, R.string.app_description, R.string.app_name)
+    Tip(R.drawable.img_0, R.string.app_description, R.string.app_name)
 )
