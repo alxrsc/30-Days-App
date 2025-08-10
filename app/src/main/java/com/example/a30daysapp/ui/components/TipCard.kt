@@ -41,9 +41,14 @@ fun TipCard(
         shape = RoundedCornerShape(8.dp)
     ) {
         Column(
-            modifier = Modifier.padding(8.dp),
-            horizontalAlignment = Alignment.CenterHorizontally
+            modifier = Modifier.padding(8.dp)
         ) {
+            Text(
+                text = stringResource(tip.dayNum),
+                style = MaterialTheme.typography.titleLarge
+
+            )
+            Spacer(modifier = Modifier.height(4.dp))
             Text(text = stringResource(tip.bodyRes), style = MaterialTheme.typography.titleMedium)
             Spacer(modifier = Modifier.height(4.dp))
             Image(

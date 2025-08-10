@@ -5,6 +5,7 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.navigation.NavController
@@ -20,7 +21,8 @@ fun TipDetailScreen (
         modifier = Modifier
             .fillMaxSize()
             .background(Color.Gray)
-            .clickable { navController.popBackStack() } // tap anywhere to go back
+            .clickable { navController.popBackStack() }, // tap anywhere to go back
+        contentAlignment = Alignment.Center
     ) {
         tipId?.let { id ->
             val tip = tips.getOrNull(id)
@@ -28,7 +30,7 @@ fun TipDetailScreen (
                 TipCard(
                     tip = it,
                     onCardClick = { /* TODO unknown yet*/ },
-                    onImageClick = { /* TODO open full image */ }
+                    onImageClick = { navController.navigate("imageFull/${tip.imageResourceId}") }
                 )
             }
         }

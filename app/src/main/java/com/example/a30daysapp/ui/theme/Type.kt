@@ -21,6 +21,11 @@ val Montserrat = FontFamily(
     Font(R.font.montserrat_italic_variable, FontWeight.Normal, FontStyle.Italic)
 )
 
+val Roboto = FontFamily(
+    Font(R.font.roboto_variable, FontWeight.Normal),
+    Font(R.font.roboto_italic_variable, FontWeight.Normal, FontStyle.Italic)
+)
+
 // Default Material 3 typography values
 val baseline = Typography()
 
@@ -35,9 +40,9 @@ val AppTypography = Typography(
     titleLarge = baseline.titleLarge.copy(fontFamily = Bungee),
     titleMedium = baseline.titleMedium.copy(fontFamily = Bungee),
     titleSmall = baseline.titleSmall.copy(fontFamily = Bungee),
-    bodyLarge = baseline.bodyLarge.copy(fontFamily = Montserrat),
-    bodyMedium = baseline.bodyMedium.copy(fontFamily = Montserrat),
-    bodySmall = baseline.bodySmall.copy(fontFamily = Montserrat),
+    bodyLarge = baseline.bodyLarge.copy(fontFamily = Roboto),
+    bodyMedium = baseline.bodyMedium.copy(fontFamily = Roboto),
+    bodySmall = baseline.bodySmall.copy(fontFamily = Roboto),
     labelLarge = baseline.labelLarge.copy(fontFamily = Montserrat),
     labelMedium = baseline.labelMedium.copy(fontFamily = Montserrat),
     labelSmall = baseline.labelSmall.copy(fontFamily = Montserrat),
