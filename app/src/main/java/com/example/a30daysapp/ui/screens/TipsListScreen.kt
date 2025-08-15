@@ -45,7 +45,7 @@ fun TipsListScreen(navController: NavController) {
                 TipCard(
                     tip = tip,
                     onCardClick = { navController.navigate("tipDetail/$index") },
-                    onImageClick = { navController.navigate("imageFull/${tip.imageResourceId}") }
+                    onImageClick = { navController.navigate("imageFull/${tip.imageHighResourceId}") }
                 )
 
             }

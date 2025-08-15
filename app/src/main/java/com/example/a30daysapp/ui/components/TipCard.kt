@@ -56,7 +56,7 @@ fun TipCard(
             Text(text = stringResource(tip.titleRes), style = MaterialTheme.typography.titleMedium)
             Spacer(modifier = Modifier.height(4.dp))
             LoadScaledImage(
-                resId = tip.imageResourceId,
+                resId = tip.imageLowResourceId,
                 modifier = Modifier
                     .fillMaxWidth()
                     .size(200.dp)
