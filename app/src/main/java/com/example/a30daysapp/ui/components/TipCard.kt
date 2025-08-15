@@ -51,15 +51,13 @@ fun TipCard(
             Spacer(modifier = Modifier.height(4.dp))
             Text(text = stringResource(tip.titleRes), style = MaterialTheme.typography.titleMedium)
             Spacer(modifier = Modifier.height(4.dp))
-            Image(
-                painter = painterResource(tip.imageResourceId),
-                contentDescription = tip.contentDescription?.let { stringResource(it) } ?: "no content description",
+            LoadScaledImage(
+                resId = tip.imageResourceId,
                 modifier = Modifier
                     .fillMaxWidth()
                     .size(200.dp)
                     .clip(RoundedCornerShape(12.dp))
-                    .clickable { onImageClick() },
-                contentScale = ContentScale.Crop
+                    .clickable { onImageClick() }
             )
             Spacer(modifier = Modifier.height(8.dp))
             Text(text = stringResource(tip.bodyRes), style = MaterialTheme.typography.bodyMedium)
