@@ -49,7 +49,7 @@ fun TipCard(
 
             )
             Spacer(modifier = Modifier.height(4.dp))
-            Text(text = stringResource(tip.bodyRes), style = MaterialTheme.typography.titleMedium)
+            Text(text = stringResource(tip.titleRes), style = MaterialTheme.typography.titleMedium)
             Spacer(modifier = Modifier.height(4.dp))
             Image(
                 painter = painterResource(tip.imageResourceId),
@@ -62,7 +62,7 @@ fun TipCard(
                 contentScale = ContentScale.Crop
             )
             Spacer(modifier = Modifier.height(8.dp))
-            Text(text = stringResource(tip.titleRes), style = MaterialTheme.typography.bodyMedium)
+            Text(text = stringResource(tip.bodyRes), style = MaterialTheme.typography.bodyMedium)
         }
     }
 
