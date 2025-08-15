@@ -30,7 +30,7 @@ fun TipDetailScreen (
                 TipCard(
                     tip = it,
                     onCardClick = { /* TODO unknown yet*/ },
-                    onImageClick = { navController.navigate("imageFull/${tip.imageResourceId}") }
+                    onImageClick = { navController.navigate("imageFull/${tip.imageHighResourceId}") }
                 )
             }
         }
